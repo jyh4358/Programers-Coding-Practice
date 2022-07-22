@@ -1,4 +1,4 @@
-package 완주하지못한선수;
+package lv1.완주하지못한선수;
 
 import java.util.Arrays;
 import java.util.HashMap;
