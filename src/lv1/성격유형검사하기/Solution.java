@@ -6,7 +6,8 @@ import java.util.HashMap;
 class Solution {
     private final String[] ARR = new String[]{"RT", "CF", "JM", "AN"};
     public String solution(String[] survey, int[] choices) {
-        String answer = "";
+
+        StringBuffer sb = new StringBuffer();
 
         HashMap<String, Integer> map = new HashMap<>();
         for (String s : ARR) {
@@ -28,14 +29,14 @@ class Solution {
 
         for (String s : map.keySet()) {
             if (map.get(s) <= 0) {
-                answer += s.charAt(0);
+                sb.append(s.charAt(0));
             } else {
-                answer += s.charAt(1);
+                sb.append(s.charAt(1));
             }
         }
 
 
-        return answer;
+        return sb.toString();
     }
 
     public static void main(String[] args) {
